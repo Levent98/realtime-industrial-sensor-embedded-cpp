@@ -1,0 +1,8 @@
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_SYSTEM_PROCESSOR cortex-m4)
+
+set(CMAKE_C_COMPILER "C:/Keil_v5/ARM/ARMCLANG/bin/armclang.exe")
+set(CMAKE_CXX_COMPILER "C:/Keil_v5/ARM/ARMCLANG/bin/armclang.exe")
+set(CMAKE_ASM_COMPILER "C:/Keil_v5/ARM/ARMCLANG/bin/armasm.exe")
+
+set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)

@@ -1,0 +1,21 @@
+# Keil
+Objects/
+Listings/
+*.axf
+*.elf
+*.map
+*.hex
+*.dep
+
+# Build
+build/
+Debug/
+Release/
+
+# Temp
+*.log
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
