@@ -1,131 +1,193 @@
-# Realtime Industrial Sensor (STM32, Bare-Metal, C++)
+# Embedded C++ RTOS Industrial Sensor (STM32F4)
 
-This project implements a real-time industrial temperature and humidity monitoring system on an STM32F4 microcontroller. The firmware is written in modern C++ using a layered architecture and runs without an RTOS by default.
+This project implements a real-time industrial-grade temperature and humidity monitoring system on an STM32F4 microcontroller. The firmware is developed using modern C++ with a layered architecture and supports both bare-metal and FreeRTOS-based execution.
+
+The system is designed with determinism, reliability, and scalability in mind, targeting industrial communication and continuous operation scenarios.
+
+---
 
 ## Overview
 
-The system collects sensor data via I2C, processes it deterministically, and exposes it over Modbus RTU over RS485 for integration with industrial monitoring systems such as SCADA.
+The firmware provides:
 
-## Features
+* Real-time sensor acquisition (SHT3x via I2C)
+* Modbus RTU communication over RS485
+* Deterministic timing using hardware timers and RTOS scheduling
+* Fault-tolerant design with watchdog supervision
+* Flash-based configuration storage with integrity validation (CRC)
+* Modular and layered software architecture
 
-- Register-level peripheral drivers for I2C, UART, ADC, DMA and PWM
-- Modbus RTU protocol implementation over RS485
-- SHT3x temperature and humidity sensor integration
-- Deterministic main loop timing using cycle counting
-- Flash-based configuration storage with CRC validation
-- Watchdog-based fault detection and recovery
-- Layered and maintainable C++ architecture
-- CMake-based build system using ARMClang / Keil toolchain
-- Optional FreeRTOS integration path for production task separation
+---
 
-## System Architecture
+## Key Features
 
-The project is organized into modular layers to improve maintainability and scalability:
+* Modern C++ embedded design (no vendor HAL dependencies)
+* Bare-metal and FreeRTOS execution modes
+* Register-level peripheral drivers:
 
-- App: Application entry point and orchestration
-- Services: Business logic such as sensor handling, Modbus, watchdog and flash services
-- Drivers: Hardware abstraction and peripheral control
-- Legacy: Low-level drivers kept for compatibility
-- Config: Configuration structures and APIs
-- Common: Shared utilities
-- Rtos: Optional FreeRTOS task orchestration layer
+  * I2C
+  * UART / RS485
+  * ADC
+  * DMA
+  * PWM
+* Full Modbus RTU protocol stack
+* RTOS task-based architecture:
 
-## Hardware
+  * Sensor task
+  * Modbus communication task
+  * ADC processing task
+  * Health monitoring task
+* Watchdog-based system recovery
+* Flash configuration storage with CRC validation
+* Deterministic loop timing and performance monitoring
 
-- MCU: STM32F410, Cortex-M4
-- Communication: RS485, Modbus RTU
-- Sensor: SHT3x over I2C
+---
+
+## Architecture
+
+The project follows a layered architecture:
+
+* App
+  Entry point and high-level orchestration
+
+* Services
+  Business logic (sensor handling, Modbus, watchdog, flash, error management)
+
+* Drivers
+  Low-level hardware interaction (register-level implementation)
+
+* Config
+  Configuration structures and persistent storage
+
+* Legacy
+  Reused low-level C modules
+
+* Rtos
+  Task management and scheduling layer
+
+* Common
+  Shared utilities and abstractions
+
+---
+
+## RTOS Integration
+
+FreeRTOS is integrated as an optional execution layer.
+
+* SysTick is owned by the FreeRTOS scheduler
+* Tasks are scheduled with deterministic timing using `vTaskDelayUntil`
+* Task health monitoring is implemented using a heartbeat mechanism
+* System health is evaluated periodically to ensure forward progress
+* Watchdog feeding is tied to system health
+
+Special care is taken to avoid conflicts between bare-metal timing and RTOS scheduling:
+
+* SysTick is conditionally disabled in bare-metal modules when RTOS is active
+* Delay and timing functions are adapted to use RTOS APIs when the scheduler is running
+
+---
 
 ## Build System
 
-The project uses CMake with ARMClang from the Keil toolchain.
+The project uses CMake and supports multiple toolchains:
+
+* arm-none-eabi-gcc (recommended)
+* ARMClang (Keil)
 
 <p align="center">
   <img src="images/build_process.png" width="700">
 </p>
 
-### Bare-Metal Build
+### Build (GCC)
 
 ```bash
-cmake -S . -B build -G Ninja -DCMAKE_TOOLCHAIN_FILE=cmake/armclang-keil.cmake
-cmake --build build
+cmake -S . -B build-gcc -G Ninja -DENABLE_FREERTOS=ON -DCMAKE_TOOLCHAIN_FILE=cmake/gcc-arm-none-eabi.cmake
+cmake --build build-gcc
 ```
 
-### FreeRTOS Build
+### Output Files
 
-The default build remains bare-metal. FreeRTOS support is enabled explicitly:
+* firmware.elf — debug symbol enabled executable
+* firmware.hex — flashing image (recommended for ST-Link)
+* firmware.bin — raw binary
+* firmware.map — memory layout and symbol map
 
-```bash
-cmake -S . -B build-rtos -G Ninja -DENABLE_FREERTOS=ON -DCMAKE_TOOLCHAIN_FILE=cmake/armclang-keil.cmake
-cmake --build build-rtos
-```
+---
 
-FreeRTOS kernel sources must be placed under:
+## Hardware
 
-```text
-ThirdParty/FreeRTOS-Kernel/
-```
+* MCU: STM32F410RBTx (Cortex-M4)
+* Communication: RS485 (Modbus RTU)
+* Sensor: SHT3x (I2C)
 
-See `RTOS_INTEGRATION.md` for the task model and migration strategy.
-
-## Output
-
-The build produces:
-
-- firmware.axf
-- firmware.hex
-
-The Intel HEX file is generated automatically using `fromelf --i32combined`.
+---
 
 ## Flashing
 
-Using ST-Link CLI:
+Using ST-Link Utility:
 
-```bash
-ST-LINK_CLI -P build/firmware.hex -V -Rst
-```
+* Select: `firmware.hex`
+* Start address: `0x08000000`
+* Enable verification after programming
 
-For the RTOS build:
+---
 
-```bash
-ST-LINK_CLI -P build-rtos/firmware.hex -V -Rst
-```
+## Debugging
 
-## RTOS Task Model
+The project supports debugging via:
 
-The optional FreeRTOS build separates the application into production-oriented tasks:
+* ST-Link + OpenOCD + VSCode (Cortex-Debug)
+* STM32CubeIDE (import ELF)
 
-- ModbusTask: high-priority protocol processing
-- SensorTask: periodic SHT3x sensor handling
-- AdcTask: periodic ADC processing
-- HealthTask: error recovery and watchdog supervision
+The ELF file includes debug symbols for full source-level debugging.
 
-The watchdog is only fed when all critical tasks report progress within the supervision window. This prevents the watchdog from being fed if a critical task stalls.
+---
 
-## Project Structure
+## Design Considerations
 
-```text
-App/        Application entry point and orchestration
-Services/   Application services and business logic
-Drivers/    Hardware abstraction layer
-Legacy/     Existing low-level drivers kept for compatibility
-Config/     Configuration structures and APIs
-Common/     Shared utilities
-Rtos/       Optional FreeRTOS task manager and hooks
-Project/    Scatter file and project configuration
-RTE/        Startup and CMSIS system files
-cmake/      Toolchain configuration
-```
+* Deterministic timing is preserved both in bare-metal and RTOS modes
+* Interrupt ownership is carefully managed (SysTick, PendSV, SVC)
+* Blocking delays are avoided in RTOS mode
+* Hardware timers are used for microsecond-level precision
+* Modular structure enables future RTOS expansion or migration
+
+---
 
 ## Future Improvements
 
-- Complete Modbus ISR-to-task queue integration
-- Add FreeRTOS runtime statistics
-- Add bootloader support for firmware updates
-- Add advanced fault logging in Flash or external storage
-- Add SCADA or MQTT integration layer
-- Add configurable Modbus register mapping
+* Advanced fault logging (Flash or external storage)
+* Bootloader support
+* MQTT / SCADA integration
+* Dynamic configuration via Modbus
+* RTOS task priority optimization and load balancing
+* Power optimization strategies
 
-## Notes
+---
 
-This project focuses on low-level control, deterministic behavior and reliability. The bare-metal build remains the baseline, while the FreeRTOS path is designed for incremental migration and production-oriented task separation.
+## Repository Structure
+
+```
+App/
+Drivers/
+Services/
+Rtos/
+Config/
+Legacy/
+Common/
+RTE/
+ThirdParty/
+cmake/
+Project/
+```
+
+---
+
+## Author
+
+Embedded Software Engineer focused on real-time systems, industrial communication, and low-level firmware development.
+
+---
+
+## License
+
+This project is intended for educational and portfolio purposes.
