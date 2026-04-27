@@ -1,21 +1,101 @@
-# Keil
-Objects/
-Listings/
-*.axf
+# =========================
+
+# Build directories
+
+# =========================
+
+build/
+build-*/
+cmake-build-*/
+
+# =========================
+
+# CMake
+
+# =========================
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+build.ninja
+.ninja_deps
+.ninja_log
+
+# =========================
+
+# Binaries / Outputs
+
+# =========================
+
 *.elf
-*.map
+*.axf
 *.hex
+*.bin
+*.map
+*.lst
+*.o
+*.obj
+*.d
 *.dep
 
-# Build
-build/
+# =========================
+
+# Keil / uVision
+
+# =========================
+
+*.uvprojx
+*.uvoptx
+*.uvguix.*
+*.uvguix.*.bak
+*.bak
+
+Objects/
+Listings/
+
+# =========================
+
+# Debug / Generated
+
+# =========================
+
 Debug/
 Release/
+DebugConfig/
 
-# Temp
+# =========================
+
+# IDE
+
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+
+# OS
+
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+
+# Logs / Temp
+
+# =========================
+
 *.log
 *.tmp
 
-# OS
-.DS_Store
-Thumbs.db
+# =========================
+
+# Optional (Generated STM stuff)
+
+# =========================
+
+# RTE gen dosyaysa açabilirsin
+
+# RTE/_Target_1/
