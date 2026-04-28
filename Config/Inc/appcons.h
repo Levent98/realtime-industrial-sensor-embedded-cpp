@@ -13,9 +13,9 @@
 #define APPLICATION_USER_HEADER_APPCONS_H_
 
 /* Exported constants --------------------------------------------------------*/
-#define VERIFY_KEY 				0x20220817
-#define AUTH_PASSWORD_PRV		0x1017
-#define AUTH_PASSWORD			0x2609
+#define VERIFY_KEY 				0x55555555
+#define AUTH_PASSWORD_PRV		0x5555
+#define AUTH_PASSWORD			0x5555
 #define FW_VERSION 				0x06020100
 #define FW_VER_DATE 			0x19060A00
 
