@@ -41,3 +41,20 @@ Thumbs.db
 
 *.log
 *.tmp
+
+# Reports / analysis outputs
+reports/
+lint_results.txt
+ai_stack.txt
+*.scvd
+
+# Local notes
+cmake-build-notes.md
+MISRA_CLEANUP_NOTES.md
+
+# Local helper scripts
+run_cppcheck*.bat
+run_clang_tidy*.bat
+
+# Backup files
+* - Kopya.*
