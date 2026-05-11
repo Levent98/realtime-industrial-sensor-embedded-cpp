@@ -1,13 +1,27 @@
 #include "ModbusService.hpp"
 #include "main.hpp"
+
+#ifndef UNIT_TEST
 extern "C" {
 #include "stm32f410rx.h"
 #include "core_cm4.h"
+}
+#else
+extern "C" uint32_t GetTime_us(void);
+
+#define __disable_irq() ((void)0)
+#define __enable_irq()  ((void)0)
+#endif
+
+extern "C" {
 #include "Config_Manager.h"
 #include "appcons.h"
 #include "apptdef.h"
 #include "sensortypes.h"
+
+#ifndef UNIT_TEST
 #include "delay.h"
+#endif
 }
 
 #include <cstring>

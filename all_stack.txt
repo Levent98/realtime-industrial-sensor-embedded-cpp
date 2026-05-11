@@ -1,0 +1,264 @@
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\App\Src\Application.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/App/Src/Application.cpp:9:1:Application::Application()	48	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/App/Src/Application.cpp:62:6:void Application::showStartupScreen() const	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/App/Src/Application.cpp:27:6:void Application::initialize()	24	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/App/Src/Application.cpp:72:6:void Application::run()	32	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\App\Src\ConfigManager.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/App/Src/ConfigManager.cpp:17:10:uint16_t {anonymous}::calcCrc(const uint8_t*, uint32_t)	12	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/App/Src/ConfigManager.cpp:97:1:ConfigManager::ConfigManager(FlashStorage&)	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/App/Src/ConfigManager.cpp:129:6:bool ConfigManager::saveDeviceConfig()	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/App/Src/ConfigManager.cpp:104:23:const SettingsStruct& ConfigManager::loadOrDefaults()	24	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/App/Src/ConfigManager.cpp:121:6:bool ConfigManager::save()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/App/Src/ConfigManager.cpp:149:6:bool ConfigManager::quickSave()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/App/Src/ConfigManager.cpp:154:17:SettingsStruct& ConfigManager::data()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/App/Src/ConfigManager.cpp:159:23:const SettingsStruct& ConfigManager::data() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/App/Src/ConfigManager.cpp:164:6:void ConfigManager::loadDefaults()	8	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\App\Src\main.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/App/Src/main.cpp:3:5:int main()	8	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Common\Src\syscalls.c.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Common/Src/syscalls.c:5:5:_close	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Common/Src/syscalls.c:10:5:_fstat	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Common/Src/syscalls.c:16:5:_isatty	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Common/Src/syscalls.c:21:5:_lseek	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Common/Src/syscalls.c:26:5:_read	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Common/Src/syscalls.c:31:5:_write	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Common/Src/syscalls.c:36:5:_getpid	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Common/Src/syscalls.c:41:5:_kill	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Common/Src/syscalls.c:47:6:_exit	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Common/Src/syscalls.c:54:9:_sbrk	0	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Config\Src\config_manager.c.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Config/Src/config_manager.c:34:6:Config_SetDefaults	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Config/Src/config_manager.c:84:6:Config_LoadFromFlash	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Config/Src/config_manager.c:29:6:Config_Init	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Config/Src/config_manager.c:92:9:Config_SaveToFlash	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Config/Src/config_manager.c:98:9:Process_BaseSettings	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Config/Src/config_manager.c:109:9:Process_SensorSettings	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Config/Src/config_manager.c:121:6:Config_QuickSave	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Config/Src/config_manager.c:126:6:Internal_Process_Base	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Config/Src/config_manager.c:131:6:Internal_Process_Sensor	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Config/Src/config_manager.c:138:10:GetSensorModel	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Config/Src/config_manager.c:143:10:CheckSensorType	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Config/Src/config_manager.c:148:9:CheckConctSettings	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Config/Src/config_manager.c:156:6:SetGasAlarmLimits	0	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Config\Src\structs.cpp.su ===== 
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Drivers\Src\DelayTimer.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/DelayTimer.cpp:36:21:uint32_t GetTick()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/DelayTimer.cpp:41:21:uint32_t GetTime_us()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/DelayTimer.cpp:56:6:static void DelayTimer::initialize()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/DelayTimer.cpp:16:17:void TimConfig()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/DelayTimer.cpp:21:17:void SysTick_Init()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/DelayTimer.cpp:78:6:static void DelayTimer::delayUs(uint16_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/DelayTimer.cpp:26:17:void Delay_us(uint16_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/DelayTimer.cpp:86:6:static void DelayTimer::delayMs(uint16_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/DelayTimer.cpp:31:17:void Delay_ms(uint16_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/DelayTimer.cpp:94:10:static uint32_t DelayTimer::tickMs()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/DelayTimer.cpp:99:6:static void DelayTimer::onSysTickInterrupt()	8	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Drivers\Src\I2cBus.cpp.su ===== 
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Drivers\Src\LcdDisplay.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:54:1:LcdDisplay::LcdDisplay()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:59:6:static void LcdDisplay::rsHigh()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:64:6:static void LcdDisplay::rsLow()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:69:6:static void LcdDisplay::rwLow()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:74:6:static void LcdDisplay::eHigh()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:79:6:static void LcdDisplay::eLow()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:84:6:static void LcdDisplay::backlightHigh()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:89:6:static void LcdDisplay::writeDb4To7(uint8_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:126:6:static void LcdDisplay::send4(uint8_t)	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:137:6:static void LcdDisplay::command(uint8_t)	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:152:6:static void LcdDisplay::data(uint8_t)	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:251:6:0(const char*)	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:163:10:static uint32_t LcdDisplay::pow10(uint8_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:173:6:static void LcdDisplay::initialize()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:227:6:static void LcdDisplay::clear()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:233:6:static void LcdDisplay::setCursor(uint8_t, uint8_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:246:6:static void LcdDisplay::writeChar(char)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:251:6:static void LcdDisplay::writeString(const char*)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:263:6:static void LcdDisplay::createChar(uint8_t, const uint8_t*)	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:277:6:void LcdDisplay::writeFixed(int32_t, uint8_t)	40	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/LcdDisplay.cpp:330:6:void LcdDisplay::test()	8	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Drivers\Src\PwmOutput.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/PwmOutput.cpp:9:1:PwmOutput::PwmOutput()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/PwmOutput.cpp:13:6:static void PwmOutput::initialize()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/PwmOutput.cpp:75:6:static void PwmOutput::setTim5(uint16_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/PwmOutput.cpp:81:6:static void PwmOutput::setTim11(uint16_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/PwmOutput.cpp:89:10:static uint32_t PwmOutput::temperatureToCurrent(int32_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/PwmOutput.cpp:100:10:static uint32_t PwmOutput::humidityToCurrent(uint32_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/PwmOutput.cpp:111:10:static uint16_t PwmOutput::currentToPwm(uint32_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/PwmOutput.cpp:59:6:void PwmOutput::setTemperature(int32_t)	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/PwmOutput.cpp:66:6:void PwmOutput::setHumidity(uint32_t)	8	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Drivers\Src\Sht3xSensor.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/Sht3xSensor.cpp:4:13:uint8_t {anonymous}::crc8(const uint8_t*, uint8_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/Sht3xSensor.cpp:24:1:Sht3xSensor::Sht3xSensor(I2cBus&)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/Sht3xSensor.cpp:29:11:I2cStatus Sht3xSensor::triggerMeasurement()	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/Sht3xSensor.cpp:35:11:I2cStatus Sht3xSensor::readMeasurement(uint16_t&, uint16_t&)	24	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/Sht3xSensor.cpp:55:9:static int32_t Sht3xSensor::temperatureX100(uint16_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/Sht3xSensor.cpp:60:9:static int32_t Sht3xSensor::humidityX100(uint16_t)	0	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Drivers\Src\SpiBus.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/SpiBus.cpp:3:1:SpiBus::SpiBus()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/SpiBus.cpp:13:6:void SpiBus::gpioInit()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/SpiBus.cpp:47:6:static void SpiBus::spiInit()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/SpiBus.cpp:7:6:void SpiBus::init()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/SpiBus.cpp:57:9:static uint8_t SpiBus::transfer(uint8_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/SpiBus.cpp:66:6:void SpiBus::transfer(uint8_t*, uint8_t*, uint16_t)	24	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/SpiBus.cpp:77:6:static void SpiBus::csLow()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Drivers/Src/SpiBus.cpp:82:6:static void SpiBus::csHigh()	0	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Drivers\Src\SystemClockFacade.cpp.su ===== 
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Legacy\Src\filter.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/filter.cpp:4:1:MedianFilter::MedianFilter()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/filter.cpp:13:6:void MedianFilter::reset()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/filter.cpp:24:6:void MedianFilter::seed(int32_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/filter.cpp:35:6:bool MedianFilter::initialized() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/filter.cpp:40:14:int32_t MedianFilter::apply(int32_t)	20	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Legacy\Src\flash_write.cpp.su ===== 
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Legacy\Src\i2c.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/i2c.cpp:11:24:void {anonymous}::smallDelay()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/i2c.cpp:17:17:void {anonymous}::generateStop()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/i2c.cpp:22:17:void {anonymous}::clearErrorFlags()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/i2c.cpp:58:17:void {anonymous}::configurePinsAlternateFunction()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/i2c.cpp:86:17:void {anonymous}::configurePeripheral24MHz()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/i2c.cpp:148:17:bool {anonymous}::waitRxNE()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/i2c.cpp:128:17:bool {anonymous}::waitBtf()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/i2c.cpp:38:17:bool {anonymous}::waitSet(volatile uint32_t&, uint32_t)	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/i2c.cpp:163:1:I2cBus::I2cBus()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/i2c.cpp:375:6:bool I2cBus::recoverBus()	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/i2c.cpp:168:6:void I2cBus::initialize()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/i2c.cpp:180:11:I2cStatus I2cBus::write(uint8_t, const uint8_t*, std::size_t)	24	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/i2c.cpp:238:11:I2cStatus I2cBus::read(uint8_t, uint8_t*, std::size_t)	24	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/i2c.cpp:360:11:I2cStatus I2cBus::writeRead(uint8_t, const uint8_t*, std::size_t, uint8_t*, std::size_t)	24	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Legacy\Src\interrupts.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/interrupts.cpp:6:17:void SysTick_Handler()	0	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Legacy\Src\sysclock.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/sysclock.cpp:8:1:SystemClock::SystemClock()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/sysclock.cpp:13:6:static bool SystemClock::enableHse()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/sysclock.cpp:26:6:static void SystemClock::configureFlashLatency()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/sysclock.cpp:36:6:static void SystemClock::configureBusPrescalers()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/sysclock.cpp:44:6:static bool SystemClock::configurePllFromHse24MHz()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/sysclock.cpp:87:6:static void SystemClock::switchSystemClockToPll()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/sysclock.cpp:96:6:void SystemClock::configure()	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/sysclock.cpp:125:10:uint32_t SystemClock::coreFrequencyHz() const	0	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Legacy\Src\uart.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:80:1:UartDriver::UartDriver()	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:92:13:static UartDriver* UartDriver::active()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:145:6:void UartDriver::simulateReceive(const uint8_t*, std::size_t)	12	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:163:6:static void UartDriver::onIdleInterrupt()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:167:6:static void UartDriver::onTxCompleteInterrupt()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:171:6:void UartDriver::onErrorInterrupt()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:176:6:void UartDriver::clearRxState()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:183:17:void UART_Init(uint32_t)	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:97:6:void UartDriver::initialize(uint32_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:257:25:uint8_t UART_Send(const uint8_t*, uint16_t)	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:104:6:static bool UartDriver::send(const uint8_t*, std::size_t)	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:296:26:uint16_t UART_RxAvailable()	12	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:314:26:uint16_t UART_RxRead(uint8_t*, uint16_t)	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:335:26:uint16_t UART_GetFrame(uint8_t*, uint16_t)	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:125:13:static std::size_t UartDriver::fetchFrame(uint8_t*, std::size_t)	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:369:25:uint8_t UART_FrameReady()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:374:17:void UART_ClearFrameFlag()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:379:17:void UART_RTU_Poll()	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:113:6:static void UartDriver::pollFrameTimeout(uint32_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:119:6:static bool UartDriver::frameAvailable()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:416:17:void USART1_IRQHandler()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Legacy/Src/uart.cpp:449:17:void DMA2_Stream7_IRQHandler()	0	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\RTE\Device\STM32F410RBTx\system_stm32f4xx.c.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/RTE/Device/STM32F410RBTx/system_stm32f4xx.c:168:6:SystemInit	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/RTE/Device/STM32F410RBTx/system_stm32f4xx.c:221:6:SystemCoreClockUpdate	0	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Services\Src\AdcService.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/AdcService.cpp:23:1:AdcService::AdcService(ModbusService&)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/AdcService.cpp:35:6:static void AdcService::configureGpio()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/AdcService.cpp:49:6:static void AdcService::configureDma()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/AdcService.cpp:79:6:static void AdcService::configureAdc()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/AdcService.cpp:28:6:void AdcService::initialize()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/AdcService.cpp:129:6:void AdcService::process()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/AdcService.cpp:148:10:static uint16_t AdcService::rawChannel3()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/AdcService.cpp:153:10:static uint16_t AdcService::rawChannel4()	0	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Services\Src\ErrorManager.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:3:1:ErrorManager::ErrorManager()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:23:6:void ErrorManager::initialize()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:46:6:void ErrorManager::process()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:72:6:void ErrorManager::reportI2cSuccess()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:118:6:void ErrorManager::reportValidModbusFrame()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:159:6:void ErrorManager::reportFlashSaveSuccess()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:164:6:bool ErrorManager::recoveryRequested() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:169:6:void ErrorManager::clearRecoveryRequest()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:174:6:void ErrorManager::markRecoveryDone()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:180:6:bool ErrorManager::fatalFault() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:185:6:bool ErrorManager::systemHealthy() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:190:6:bool ErrorManager::shouldFeedWatchdog() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:195:9:uint8_t ErrorManager::crcErrorCount() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:196:9:uint8_t ErrorManager::uartOverflowCount() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:197:9:uint8_t ErrorManager::sensorReadFailCount() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:198:9:uint8_t ErrorManager::i2cRecoveryCount() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:199:9:uint8_t ErrorManager::watchdogResetCount() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:200:9:uint8_t ErrorManager::flashSaveFailCount() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:202:9:uint8_t ErrorManager::consecutiveSensorReadFailCount() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:207:9:uint8_t ErrorManager::consecutiveUartOverflowCount() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:212:9:uint8_t ErrorManager::consecutiveI2cRecoveryFailCount() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:217:9:uint8_t ErrorManager::consecutiveFlashSaveFailCount() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:222:6:static void ErrorManager::incrementSaturated(uint8_t&)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:83:6:void ErrorManager::reportI2cError(I2cStatus)	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:105:6:void ErrorManager::reportSensorReadFailure()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:112:6:void ErrorManager::reportCrcError()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:123:6:void ErrorManager::reportUartOverflow()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:130:6:void ErrorManager::reportI2cRecovery(bool)	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:147:6:void ErrorManager::reportWatchdogReset()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ErrorManager.cpp:152:6:void ErrorManager::reportFlashSaveFailure()	8	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Services\Src\FlashStorage.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/FlashStorage.cpp:10:1:FlashStorage::FlashStorage()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/FlashStorage.cpp:14:6:static bool FlashStorage::waitUntilReady()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/FlashStorage.cpp:33:6:static void FlashStorage::unlock()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/FlashStorage.cpp:41:6:static void FlashStorage::lock()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/FlashStorage.cpp:46:6:static bool FlashStorage::isAddressInConfigSector(uint32_t, std::size_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/FlashStorage.cpp:66:6:static bool FlashStorage::eraseConfigSector()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/FlashStorage.cpp:134:6:static bool FlashStorage::read(uint32_t, void*, std::size_t)	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/FlashStorage.cpp:145:6:static bool FlashStorage::verify(uint32_t, const void*, std::size_t)	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/FlashStorage.cpp:89:6:bool FlashStorage::write(uint32_t, const void*, std::size_t) const	32	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Services\Src\ModbusService.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:28:1:ModbusService::ModbusService(UartDriver&, ErrorManager&)	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:73:24:static uint16_t ModbusService::crc16(const uint8_t*, uint16_t)	12	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:96:6:void ModbusService::setHoldingRegister(uint16_t, uint16_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:106:6:void ModbusService::setInputRegister(uint16_t, uint16_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:111:10:uint16_t ModbusService::inputRegister(uint16_t) const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:116:6:void ModbusService::setHoldingRegisterInternal(uint16_t, uint16_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:123:10:uint16_t ModbusService::getHoldingRegisterInternal(uint16_t) const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:101:10:uint16_t ModbusService::holdingRegister(uint16_t) const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:136:6:void ModbusService::setInputRegisterInternal(uint16_t, uint16_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:143:10:uint16_t ModbusService::getInputRegisterInternal(uint16_t) const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:369:6:void ModbusService::sensorUpdate()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:413:6:void ModbusService::updateDiagnosticRegisters()	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:148:6:void ModbusService::syncAll()	40	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:46:6:void ModbusService::initialize(uint8_t)	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:399:6:void ModbusService::updateLiveInputs()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:660:6:void ModbusService::sendErrorResponse(uint8_t, uint8_t)	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:495:9:uint8_t ModbusService::processReadHoldingRegisters(const frame_item_t*)	24	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:535:9:uint8_t ModbusService::processReadInputRegisters(const frame_item_t*)	32	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:577:9:uint8_t ModbusService::processWriteSingleRegister(const frame_item_t*)	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:675:9:uint8_t ModbusService::queueFrame(const uint8_t*, uint16_t)	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:714:9:uint8_t ModbusService::dequeueFrame(frame_item_t*)	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:746:21:const frame_item_t* ModbusService::peekFrame() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:761:6:void ModbusService::popFrame()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:777:9:uint8_t ModbusService::queueCount() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:788:9:uint8_t ModbusService::isQueueFull() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:799:9:uint8_t ModbusService::isQueueEmpty() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:810:6:void ModbusService::clearQueue()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:822:10:uint32_t ModbusService::overflowCount() const	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:833:6:void ModbusService::updateRegisters(uint16_t, const uint16_t*, uint16_t)	12	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:846:9:static uint8_t ModbusService::isWritable(uint16_t)	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:899:9:uint8_t ModbusService::saveBaseSettings(const uint16_t*, uint8_t)	20	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:1031:9:uint8_t ModbusService::saveSensorSettings(const uint16_t*, uint8_t)	72	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:851:9:uint8_t ModbusService::runCommand(uint16_t, uint16_t)	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:612:9:uint8_t ModbusService::processWriteMultipleRegisters(const frame_item_t*)	32	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:436:9:uint8_t ModbusService::processFrame(const frame_item_t*)	24	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/ModbusService.cpp:58:6:void ModbusService::process()	24	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Services\Src\SensorService.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/SensorService.cpp:8:1:SensorService::SensorService(Sht3xSensor&, ModbusService&, LcdDisplay&, PwmOutput&, ErrorManager&)	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/SensorService.cpp:31:6:void SensorService::initialize()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/SensorService.cpp:66:6:void SensorService::handleTriggerState(uint32_t)	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/SensorService.cpp:150:6:void SensorService::updateModbus(uint16_t, uint16_t)	16	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/SensorService.cpp:177:6:void SensorService::updateLcd()	8	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/SensorService.cpp:90:6:void SensorService::handleReadState(uint32_t)	32	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/SensorService.cpp:47:6:void SensorService::process(uint32_t)	0	static
+===== C:\Users\Arge1\Music\oop_keil_project_define_warning_fixed\build\CMakeFiles\realtime_industrial_sensor.elf.dir\Services\Src\WatchdogService.cpp.su ===== 
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/WatchdogService.cpp:7:1:WatchdogService::WatchdogService()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/WatchdogService.cpp:24:6:static void WatchdogService::kick()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/WatchdogService.cpp:29:6:static void WatchdogService::waitForUpdate()	0	static
+C:/Users/Arge1/Music/oop_keil_project_define_warning_fixed/Services/Src/WatchdogService.cpp:11:6:void WatchdogService::initialize() const	8	static

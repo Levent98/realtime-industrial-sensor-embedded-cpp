@@ -56,3 +56,25 @@ target_include_directories(test_sht3x_conversion PRIVATE
 )
 
 add_test(NAME test_sht3x_conversion COMMAND test_sht3x_conversion)
+
+add_executable(test_modbus_service
+    test_modbus_service.cpp
+    HostUartDriverStub.cpp
+    ../Services/Src/ModbusService.cpp
+    ../Services/Src/ErrorManager.cpp
+    ../Config/Src/config_manager.c
+)
+
+target_compile_definitions(test_modbus_service PRIVATE
+    UNIT_TEST
+)
+
+target_include_directories(test_modbus_service PRIVATE
+    ../Services/Inc
+    ../Drivers/Inc
+    ../Legacy/Inc
+    ../Config/Inc
+    ../App/Inc
+)
+
+add_test(NAME test_modbus_service COMMAND test_modbus_service)
