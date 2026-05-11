@@ -1,0 +1,32 @@
+name: Firmware CI
+
+on:
+  push:
+    branches: [ ci-cd ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install ARM GCC
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            cmake \
+            ninja-build \
+            gcc-arm-none-eabi \
+            binutils-arm-none-eabi
+
+      - name: Configure
+        run: |
+          cmake -B build -G Ninja \
+          -DCMAKE_TOOLCHAIN_FILE=cmake/gcc-arm-none-eabi.cmake
+
+      - name: Build
+        run: |
+          cmake --build build
