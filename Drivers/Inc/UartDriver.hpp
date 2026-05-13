@@ -3,6 +3,7 @@
 
 #include <cstdint>
 #include <cstddef>
+#include "UartRingBuffer.hpp"
 
 static const std::uint16_t UART_RX_BUF_SIZE = 256U;
 static const std::uint16_t UART_TX_BUF_SIZE = 256U;
@@ -72,6 +73,7 @@ private:
 
     std::uint8_t rxBuffer_[BufferSize];
     std::uint8_t frameBuffer_[BufferSize];
+    UartFrameBuffer frameAssembler_;
 
     void clearRxState();
 };

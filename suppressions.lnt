@@ -1,13 +1,22 @@
 // suppressions.lnt
 
-// 1. Kütüphane dosyalarını sustur (En önemli adım)
 -wlib(1)
 
-// 2. Kütüphane yollarını tanıt (Buradaki yolları kendi PC'ne göre güncelle)
-+libdir("C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.07\*")
+-e161
+-e553
+-e9024
 
-// 3. Spesifik hataları projeden tamamen gizle
--e586      // Pragma ve Union uyarılarını kapat
--e9141     // Global declaration notlarını gizle
--e537      // Tekrarlanan include uyarısını gizle
--e451      // Include guard uyarısını kütüphaneler için gizle
+-elib(970)
+
+-e586
+-e9141
+-e537
+-e451
+
+-elib(967)
+-elib(9026)
+-elib(9146)
+
++libdir("C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.07\arm-none-eabi\include\*")
++libdir("C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.07\lib\gcc\arm-none-eabi\10.3.1\include\*")
++libdir("C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.07\arm-none-eabi\include\c++\10.3.1\*")

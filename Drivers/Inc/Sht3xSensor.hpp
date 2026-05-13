@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include "I2cBus.hpp"
+#include "Testability.hpp"
 
 class Sht3xSensor {
 public:
@@ -12,8 +13,10 @@ public:
     Sht3xSensor(Sht3xSensor&&) = delete;
     Sht3xSensor& operator=(Sht3xSensor&&) = delete;
 
-    I2cStatus triggerMeasurement();
-    I2cStatus readMeasurement(uint16_t& rawTemperature, uint16_t& rawHumidity);
+    TEST_VIRTUAL ~Sht3xSensor() = default;
+
+    TEST_VIRTUAL I2cStatus triggerMeasurement();
+    TEST_VIRTUAL I2cStatus readMeasurement(uint16_t& rawTemperature, uint16_t& rawHumidity);
 
     static int32_t temperatureX100(uint16_t raw);
     static int32_t humidityX100(uint16_t raw);

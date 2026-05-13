@@ -1,3 +1,6 @@
+// Host-side UART driver stub used by test_modbus_service.cpp.
+// It captures transmitted Modbus responses in g_lastUartTx instead of using real UART/RS485 hardware.
+
 #include "UartDriver.hpp"
 #include <vector>
 
@@ -26,7 +29,8 @@ UartDriver::UartDriver()
       frameLength_(0U),
       lastByteTimestampUs_(0U),
       rxBuffer_{0},
-      frameBuffer_{0}
+      frameBuffer_{0},
+      frameAssembler_()
 {
 }
 
@@ -68,4 +72,5 @@ void UartDriver::clearRxState()
     rxLength_ = 0U;
     frameLength_ = 0U;
     frameReady_ = false;
+    frameAssembler_.clear();
 }

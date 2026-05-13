@@ -160,7 +160,7 @@ namespace {
     }
 }
 
-I2cBus::I2cBus()
+I2cBus::I2cBus() noexcept
     : initialized_(false)
 {
 }

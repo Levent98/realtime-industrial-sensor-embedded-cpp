@@ -116,6 +116,8 @@ void SensorService::handleReadState(uint32_t nowMs)
         return;
     }
 
+    errors_.reportSensorReadSuccess();
+
     const int32_t tempInput = sensor_.temperatureX100(rawTemperature_);
     int32_t humidityInput = sensor_.humidityX100(rawHumidity_);
 

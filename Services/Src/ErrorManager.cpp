@@ -74,10 +74,7 @@ void ErrorManager::reportI2cSuccess()
     timeoutCount_ = 0U;
     nackCount_ = 0U;
     busErrorCount_ = 0U;
-    consecutiveSensorReadFailCount_ = 0U;
     consecutiveI2cRecoveryFailCount_ = 0U;
-    recoveryRequested_ = false;
-    recoveryDone_ = false;
 }
 
 void ErrorManager::reportI2cError(I2cStatus status)
@@ -107,6 +104,11 @@ void ErrorManager::reportSensorReadFailure()
     incrementSaturated(sensorReadFailCount_);
     incrementSaturated(consecutiveSensorReadFailCount_);
     process();
+}
+
+void ErrorManager::reportSensorReadSuccess()
+{
+    consecutiveSensorReadFailCount_ = 0U;
 }
 
 void ErrorManager::reportCrcError()

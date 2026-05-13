@@ -22,6 +22,7 @@ public:
     void reportI2cSuccess();
     void reportI2cError(I2cStatus status);
     void reportSensorReadFailure();
+    void reportSensorReadSuccess();
     void reportCrcError();
     void reportValidModbusFrame();
     void reportUartOverflow();

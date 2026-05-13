@@ -37,6 +37,7 @@ set(SOURCES
     Drivers/Src/Sht3xSensor.cpp
     Drivers/Src/SystemClockFacade.cpp
     Drivers/Src/SpiBus.cpp
+    Drivers/Src/UartRingBuffer.cpp
 
     Config/Src/config_manager.c
     Config/Src/structs.cpp
@@ -131,21 +132,30 @@ set(LNT_FILES_DIR "C:/Users/Arge1/Downloads/pclp.windows.2025-sp1/pclp/config")
 
 add_custom_target(pclint
     COMMAND "${PCLINT_EXE}"
+
+        # Lint config klasörü
         "-i${LNT_FILES_DIR}"
+
+        # GCC compiler config
         "co-gcc.lnt"
+
+        # MISRA C++ profile
+        "C:/Users/Arge1/Downloads/pclp.windows.2025-sp1/pclp/lnt/au-misra-cpp2.lnt"
+
+        # Kendi suppress ayarların
         "${CMAKE_SOURCE_DIR}/suppressions.lnt"
-        
-        # Çıktı formatı (Parametre ve yol arasına boşluk koymadan deniyoruz)
+
+        # Çıktı dosyası
         "-os(${CMAKE_SOURCE_DIR}/lint_results.txt)"
-        
-        # Header dosyan (Senin eklediğin dosya)
+
+        # Macro / compiler compatibility header
         "-header(${CMAKE_SOURCE_DIR}/lint_cmacros.h)"
 
-        # KRİTİK: İşlemciyi PC-Lint'e komut satırından zorla tanıtıyoruz
+        # Compiler defines
         "-DSTM32F410Rx"
         "-D__GNUC__"
 
-        # Include Yolları
+        # Include yolları
         "-i${CMAKE_SOURCE_DIR}"
         "-i${CMAKE_SOURCE_DIR}/App/Inc"
         "-i${CMAKE_SOURCE_DIR}/Services/Inc"
@@ -153,24 +163,31 @@ add_custom_target(pclint
         "-i${CMAKE_SOURCE_DIR}/Legacy/Inc"
         "-i${CMAKE_SOURCE_DIR}/Config/Inc"
         "-i${CMAKE_SOURCE_DIR}/Common/Inc"
+
         "-i${CMAKE_SOURCE_DIR}/RTE"
         "-i${CMAKE_SOURCE_DIR}/RTE/Device/STM32F410RBTx"
         "-i${CMAKE_SOURCE_DIR}/RTE/_Target_1"
+
         "-i${CMAKE_SOURCE_DIR}/Drivers/CMSIS/Include"
         "-i${CMAKE_SOURCE_DIR}/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
 
-        # Dosyaların
+        # Source dosyaları
         "${CMAKE_SOURCE_DIR}/App/Src/main.cpp"
         "${CMAKE_SOURCE_DIR}/App/Src/Application.cpp"
         "${CMAKE_SOURCE_DIR}/App/Src/ConfigManager.cpp"
+
         "${CMAKE_SOURCE_DIR}/Services/Src/ModbusService.cpp"
         "${CMAKE_SOURCE_DIR}/Services/Src/SensorService.cpp"
+
         "${CMAKE_SOURCE_DIR}/Drivers/Src/DelayTimer.cpp"
         "${CMAKE_SOURCE_DIR}/Drivers/Src/Sht3xSensor.cpp"
+
         "${CMAKE_SOURCE_DIR}/Legacy/Src/sysclock.cpp"
         "${CMAKE_SOURCE_DIR}/Legacy/Src/filter.cpp"
 
     WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
+
     VERBATIM
-    COMMENT "PC-Lint Plus analizi yapiliyor..."
+
+    COMMENT "PC-Lint Plus MISRA analizi yapiliyor..."
 )
